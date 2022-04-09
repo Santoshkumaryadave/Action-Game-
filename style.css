@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: red;
+    overflow: hidden;
+}
+.control{
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    right: 0%;
+    flex-direction: column;
+    width: 200px;
+    color: olivedrab;
+    height: 100px;
+    align-items: center;
+   
+}
+.billow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+}
+
+.gamecontainer {
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    animation: bgAni 1s linear infinite;
+}
+.gameover{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+#scoreCount{
+    color: black;
+    padding: 2px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.men {
+    background-image: url('men.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 108px;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+}
+
+.abstacle {
+    background-image: url(Draigon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 171px;
+    height: 183px;
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+
+}
+.mager{
+
+    background-image: url(mager.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 95px;
+    position: absolute;
+    bottom: 0%;
+    left: 67%;
+}
+.animatemen{
+    animation: men .8s linear;
+}
+.abstacleAni{
+    animation: abstacleAni 6s linear infinite;
+}
+.mabstacleAni{
+    animation: abstacleAni 12s linear infinite;
+}
+@keyframes men {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom:322px;
+    }
+    100%{
+        bottom: 0;
+    }
+    
+}
+@keyframes abstacleAni {
+    
+0%{
+    left: 100vw;
+
+}
+100%{
+    left: -100vw;
+}
+}
